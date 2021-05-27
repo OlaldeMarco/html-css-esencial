@@ -119,6 +119,7 @@ pre {
 }
 .section-content img {
   margin-top: 40px;
+  max-width: 100%;
 }
 .section-content ul li {
   margin-bottom: 16px;
