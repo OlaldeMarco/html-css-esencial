@@ -1,0 +1,268 @@
+:root {
+  font-size: 16px;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+  --gray40: #808080;
+}
+
+body {
+  color: var(--gray30);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+header li {
+  color: var(--gray40);
+  margin-block-end: 16px;
+}
+.header-content {
+  padding-inline: 20px;
+}
+header {
+  margin-block-start: 20px;
+  font-size: 14px;
+  color: var(--gray10);
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--gray30);
+}
+nav details summary {
+  font-weight: bold;
+}
+.wrapper {
+  margin: auto;
+  max-inline-size: 902px;
+}
+.variantes {
+  list-style: none;
+  width: 188px;
+}
+.nemiumA {
+  background: #000000;
+  padding-block: 8px;
+  padding-inline-start: 8px;
+  padding-inline-end: 109px;
+  color: white;
+  border-radius: 4px;
+}
+a {
+  color: var(--gray30);
+}
+hr {
+  margin: 64px 0;
+}
+
+h1 {
+  font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 32px;
+  margin-block-start: 64px;
+  margin-block-end: 40px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 24px;
+  margin-block-start: 16px;
+  margin-block-end: 24px;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+pre {
+  background: #fec62e;
+  padding: 40px;
+  font-family: "Roboto";
+  line-height: 24px;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    ),
+    url(../images/patron-1.png);
+  height: 350px;
+}
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+.section-content {
+  margin-top: 164px;
+  position: relative;
+}
+.section-content:first-of-type {
+  margin: 0;
+}
+.section-content + hr {
+  display: none;
+}
+.section-content {
+  counter-reset: titleList;
+}
+.section-content h3 {
+  counter-increment: titleList;
+  padding-bottom: 8px;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+}
+.section-content h3::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  display: inline-block;
+  background: var(--gray30);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section-content ul li {
+  margin-block-end: 16px;
+}
+.section-content ol li {
+  line-height: 24px;
+}
+.section-content-end {
+  margin-block-start: 40px;
+  margin-block-end: 130px;
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+.main-content {
+  background: white;
+}
+blockquote {
+  margin: 32px 0;
+  padding-left: 16px;
+  font-size: 24px;
+  border-left: 4px solid var(--gray30);
+  line-height: 24px;
+}
+blockquote span {
+  color: var(--gray10);
+}
+blockquote span::before {
+  content: "-";
+}
+.imgdom {
+  height: 470px;
+  width: 900px;
+}
+.imgcss {
+  height: 428px;
+  width: 901px;
+}
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+.slider-bullet {
+  inline-size: 15px;
+  block-size: 15px;
+  background: var(--gray30);
+  border-radius: 50%;
+  inset-inline-start: 10px;
+}
+.section-content-end h2 {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+.form input {
+  border: 1px solid var(--gray10);
+  box-sizing: border-box;
+  border-radius: 90px;
+  font-size: 16px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  display: inline-block;
+}
+
+.form input::-webkit-input-placeholder {
+  color: black;
+}
+.form input[type="email"] {
+  position: absolute;
+  width: 337px;
+}
+
+.form input[type="submit"] {
+  background: black;
+  color: white;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-inline-start: 218px;
+  width: 119px;
+}
+footer {
+  height: 143px;
+  background: var(--gray20);
+  color: white;
+  padding-block-start: 47px;
+  padding-block-end: 17px;
+  font-size: 32px;
+}
+.section-content-footer {
+  margin-block-end: 17px;
+  margin-inline: 500px;
+}
+.section-imagenes {
+  padding-inline-start: 101px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    block-size: 350px;
+  }
+  .header-content {
+    inset-block-start: 70px;
+    padding-inline: 0;
+    position: relative;
+  }
+  .header {
+    position: sticky;
+    inset-block-start: -95px;
+  }
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    margin-inline-start: -208px;
+    inline-size: 188px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-block-start: 64px;
+  }
+}
